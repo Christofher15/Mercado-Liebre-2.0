@@ -1,0 +1,110 @@
+/*----------SECCION REGISTER----------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.formulario-registro {
+    width: 600px;
+    background-color: #E1E0E0;
+    padding: 30px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #b2b0b0;
+}
+
+.encabezado-registro {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.controles {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #E1E0E0;
+    font-size: 18px;
+}
+
+.formulario-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.formulario-registro a {
+    color: #04356a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formulario-registro a:hover {
+    color: #04356a;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* .button-submit {
+    width: 100%;
+    background-color: #04356a;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    border-radius: 4px;
+} */
+
+.button-submit {
+    padding: 10px 20px;
+    background-color: #0c60ba;
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button-submit:hover {
+    background-color: #04356a;
+  }
+  .button-submit:active {
+    background-color: #04356a;
+  }
+
+.logo__container-register {
+    background-color: #FFF159;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo__container-register img{
+    flex-grow: 0.1;
+}
+
+.logo__container-register i{
+    flex-grow: 0.1;
+}
+
+.img__logo-register {
+    width: 120px;
+    margin: 10px;
+}
+
+
+
+/*----------SECCION FOOTER----------*/
+
+footer p {
+    text-align: center;
+}

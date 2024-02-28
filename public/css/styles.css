@@ -1,0 +1,326 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+
+/*----------SECCION HEADER----------*/
+
+.main-header {
+    background-color: #FFF159;
+    padding: 20px;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo__barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__barra i {
+    flex-grow: 0.5;
+}
+
+.barra__busqueda {
+    display: flex;
+    border-radius: 4px;
+    border-color: #737272;
+    height: 30px;
+    width: 250px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header__logo i {
+    width: 200px;
+}
+
+.copy__header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+/*----------SECCION MAIN----------*/
+
+main section {
+    text-align: center;
+}
+main section img{
+    margin: 10px 0;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+}
+.main-navbar a:hover {
+    text-decoration: underline;
+    font-size: 21px;
+}
+
+.contenedor_banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+.image__container img {
+    width: 250px;
+}
+
+.general__article {
+    display: flex;
+    justify-content: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.card__description {
+    display: block;
+}
+
+.card__title {
+    display: flex;
+    justify-content: flex-start;
+    color: #737272;
+    margin: 15px;
+}
+
+.card__info {
+    border-top: solid #ebebeb 1px;
+    padding: 15px;
+    display: block;
+    position: relative;
+}
+
+
+.card__info i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+.card__info-container {
+    display: flex;
+}
+.card__price {
+    flex-grow: 0.3;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+.card__discount {
+    flex-grow: 0.7;
+    justify-content: flex-start;
+}
+.card__title {
+    margin-left: 15px;
+    font-size: 24px;
+    text-align: left;
+    color: dimgrey;
+}
+
+
+section .card__product {
+    border: solid #ebebeb 1px;
+    margin: 15px;
+}
+
+.card__discount {
+    color: #37B750;
+    font-size: 16px;
+}
+
+section i {
+    border: solid #ebebeb 1px;
+    border-radius: 50px;
+    border-width: 15px;
+    color: #37B750;
+}
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+    transition: 800ms;
+}
+
+
+
+
+/*----------SECCION FOOTER----------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-top: solid #EBEBEB 3px;
+    margin-bottom: 20px
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.footer__container i {
+    color: #1259c3;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.footer__container i:hover {
+    color: #00060f;
+    font-size: 30px;
+    margin: 15px;
+}
+
+
+/*----------MEDIA QUERIES----------*/
+
+@media (min-width: 769px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    .body__main-ofertas, .body__main-visitas {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .productos {
+        width: 48%;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card__description {
+        display: none;
+    }
+    .producto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        .card__description {
+            display: block;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .header__logo {
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main-navbar {
+        margin-top: 50px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .productos {
+        width: 24%;
+    }
+}
+
+
+
+
